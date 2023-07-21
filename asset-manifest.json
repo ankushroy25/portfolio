@@ -1,21 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ea28455b.css",
-    "main.js": "/portfolio/static/js/main.066f0ab5.js",
-    "static/media/meds.jpg": "/portfolio/static/media/meds.33a9772e4d5658c17500.jpg",
-    "static/media/appointment.jpg": "/portfolio/static/media/appointment.251b7ea8d313daeb3157.jpg",
-    "static/media/hospital.jpg": "/portfolio/static/media/hospital.c8db7feb47a2d4762092.jpg",
-    "static/media/nutrition.jpg": "/portfolio/static/media/nutrition.54cf8c3da11c89715d7c.jpg",
-    "static/media/emergency.jpg": "/portfolio/static/media/emergency.eef3c4247e7c9cee4e1f.jpg",
-    "static/media/cover.jpg": "/portfolio/static/media/cover.49a47f286dde690eeac7.jpg",
-    "static/media/mental.jpg": "/portfolio/static/media/mental.e8d326dd432f6c0ba183.jpg",
-    "static/media/medicine.png": "/portfolio/static/media/medicine.bd0547188afb8282579d.png",
+    "main.css": "/portfolio/static/css/main.bba7854b.css",
+    "main.js": "/portfolio/static/js/main.da090f4c.js",
+    "static/media/bellyburst.png": "/portfolio/static/media/bellyburst.234452ae74f1cd0c2e21.png",
+    "static/media/medbuddy.png": "/portfolio/static/media/medbuddy.278544842eb93d33d9f5.png",
+    "static/media/Ankush_Roy.pdf": "/portfolio/static/media/Ankush_Roy.09ca3a9d0fc209d38941.pdf",
+    "static/media/profilepic.jpg": "/portfolio/static/media/profilepic.7cfb9b01600b72fee4aa.jpg",
+    "static/media/todolist.png": "/portfolio/static/media/todolist.e3037cf3ee34c196bba6.png",
+    "static/media/quotegenerator.png": "/portfolio/static/media/quotegenerator.893f16248466a1c128ea.png",
     "index.html": "/portfolio/index.html",
-    "main.ea28455b.css.map": "/portfolio/static/css/main.ea28455b.css.map",
-    "main.066f0ab5.js.map": "/portfolio/static/js/main.066f0ab5.js.map"
+    "main.bba7854b.css.map": "/portfolio/static/css/main.bba7854b.css.map",
+    "main.da090f4c.js.map": "/portfolio/static/js/main.da090f4c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea28455b.css",
-    "static/js/main.066f0ab5.js"
+    "static/css/main.bba7854b.css",
+    "static/js/main.da090f4c.js"
   ]
 }
