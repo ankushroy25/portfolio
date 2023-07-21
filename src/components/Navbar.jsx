@@ -118,6 +118,7 @@ const Navbar = () => {
               className="flex justify-between items-center w-full text-gray-300"
               href="https://www.linkedin.com/in/ankush-roy-b141b2224/"
               target="_blank"
+              rel="noreferrer"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
@@ -127,6 +128,7 @@ const Navbar = () => {
               className="flex justify-between items-center w-full text-gray-300"
               href="https://github.com/ankushroy25"
               target="_blank"
+              rel="noreferrer"
             >
               Github <FaGithub size={30} />
             </a>
@@ -137,6 +139,7 @@ const Navbar = () => {
               className="flex justify-between items-center w-full text-gray-300"
               href="mailto:`imankushroy@gmail.com`"
               target="_blank"
+              rel="noreferrer"
             >
               Email <HiOutlineMail size={30} />
             </a>
@@ -147,6 +150,7 @@ const Navbar = () => {
               className="flex justify-between items-center w-full text-gray-300"
               href="https://twitter.com/_ankush___"
               target="_blank"
+              rel="noreferrer"
             >
               Twitter <FaTwitter size={30} />
             </a>
