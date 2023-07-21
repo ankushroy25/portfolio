@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid } from "@mui/material"; // Import Grid from Material-UI
-import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
@@ -15,6 +14,7 @@ import {
   SiFirebase,
   SiAmazonaws,
   SiGooglecloud,
+  SiExpress,
 } from "react-icons/si";
 
 function Skill() {
@@ -69,7 +69,7 @@ function Skill() {
             <SiFirebase />
           </Grid>
           <Grid item xs={4} md={2} className="tech-icons">
-            <CgCPlusPlus />
+            <SiExpress />
           </Grid>
         </Grid>
       </div>

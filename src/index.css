@@ -40,7 +40,7 @@ body {
   background-image: linear-gradient(
     to top,
     rgba(124, 192, 192, 0.995),
-    hsla(194, 100%, 16%, 0.979)
+    hsla(194, 100%, 85%, 0.979)
   ) !important;
 }
 .jumbotron {
@@ -49,5 +49,5 @@ body {
 
 .tech-icons {
   font-size: 80px;
-  color: rgb(194, 237, 255);
+  color: rgb(157, 225, 255);
 }

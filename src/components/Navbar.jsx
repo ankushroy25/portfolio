@@ -7,7 +7,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-// import Logo from "../assets/medicine.png";
+import Logo from "../assets/namelogo-tr.png";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -37,12 +37,11 @@ const Navbar = () => {
   return (
     <div
       className={`fixed w-full h-[80px] mb-6 flex justify-between items-center px-4 text-white ${
-        scrolled ? "bg-[#12071b]" : ""
+        scrolled ? "bg-[#20949ca7]" : ""
       }`}
     >
       <div className="flex">
-        {/* <img src={Logo} alt="Logo" style={{ height: "50px" }} /> */}
-        <span className="m-3 text-3xl font-bold">AR</span>
+        <img src={Logo} alt="Logo" style={{ height: "120px" }} />
       </div>
 
       <ul className="hidden md:flex text-xl">
@@ -78,7 +77,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-[#20949ca7] flex flex-col justify-center items-center"
         }
       >
         <li className="py-6 text-4xl">
@@ -117,7 +116,8 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://www.linkedin.com/in/ankush-roy-b141b2224/"
+              target="_blank"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
@@ -125,7 +125,8 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-black">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://github.com/ankushroy25"
+              target="_blank"
             >
               Github <FaGithub size={30} />
             </a>
@@ -134,7 +135,8 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="mailto:`imankushroy@gmail.com`"
+              target="_blank"
             >
               Email <HiOutlineMail size={30} />
             </a>
@@ -143,7 +145,8 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://twitter.com/_ankush___"
+              target="_blank"
             >
               Twitter <FaTwitter size={30} />
             </a>

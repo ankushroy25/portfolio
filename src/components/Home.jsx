@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import Picture from "../assets/medbuddy.png";
+import Picture from "../assets/profilepic.jpg";
 import ResumePDF from "../assets/Ankush_Roy.pdf";
 const Home = () => {
+  const textToType = "Hello, I'm a Full Stack Developer.";
+  const [displayText, setDisplayText] = useState("");
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const typingInterval = setInterval(() => {
+      setDisplayText(textToType.slice(0, currentIndex));
+      currentIndex++;
+
+      if (currentIndex > textToType.length) {
+        clearInterval(typingInterval);
+      }
+    }, 100); // Adjust the typing speed here
+
+    return () => clearInterval(typingInterval);
+  }, []);
+
   return (
     <div
       name="home"
@@ -14,9 +32,15 @@ const Home = () => {
           <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
             Ankush Roy
           </h1>
-          <h2 className="text-3xl sm:text-5xl mt-4 font-bold text-[#8892b0]">
-            I'm a Full Stack Developer.
-          </h2>
+          <motion.h2
+            animate={{
+              opacity: [0, 1],
+              transition: { duration: 0.7, delay: 0.3 },
+            }}
+            className="text-3xl sm:text-5xl mt-4 font-bold text-[#8892b0]"
+          >
+            {displayText}
+          </motion.h2>
           <p className="text-[#8892b0] py-4 max-w-[700px]">
             I’m a developer who loves working with cloud and build exceptional
             digital experiences with MERN. Currently, I’m focused on learning
@@ -35,8 +59,12 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="md:w-1/2 mt-8 md:mt-0 md:ml-12">
-          <img src={Picture} alt="Profile Picture" className="w-full" />
+        <div className="flex justify-center md:w-1/2 my-8 md:mt-0 md:ml-12 ">
+          <img
+            src={Picture}
+            alt="Profile"
+            className="h-80 md:h-full rounded-full shadow-cyan-300 shadow-2xl"
+          />
         </div>
       </div>
     </div>
