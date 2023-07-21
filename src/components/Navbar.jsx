@@ -1,24 +1,48 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   FaBars,
   FaTimes,
   FaLinkedin,
-  FaFacebook,
+  FaGithub,
   FaTwitter,
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import Logo from "../assets/medicine.png";
+// import Logo from "../assets/medicine.png";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
   const handleClick = () => setNav(!nav);
 
+  // Add scroll event listener
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener on unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="fixed w-full h-[80px] mb-6 flex justify-between items-center px-4 bg-[#19ada6] text-white">
+    <div
+      className={`fixed w-full h-[80px] mb-6 flex justify-between items-center px-4 text-white ${
+        scrolled ? "bg-[#12071b]" : ""
+      }`}
+    >
       <div className="flex">
-        <img src={Logo} alt="Logo" style={{ height: "50px" }} />
-        <span className="m-3 text-3xl font-bold">FlashMeds</span>
+        {/* <img src={Logo} alt="Logo" style={{ height: "50px" }} /> */}
+        <span className="m-3 text-3xl font-bold">AR</span>
       </div>
 
       <ul className="hidden md:flex text-xl">
@@ -28,8 +52,8 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="services" smooth={true} duration={500}>
-            Services
+          <Link to="projects" smooth={true} duration={500}>
+            Projects
           </Link>
         </li>
         <li>
@@ -98,6 +122,14 @@ const Navbar = () => {
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-black">
+            <a
+              className="flex justify-between items-center w-full text-gray-300"
+              href="/"
+            >
+              Github <FaGithub size={30} />
+            </a>
+          </li>
 
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-600">
             <a
@@ -107,15 +139,8 @@ const Navbar = () => {
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="/"
-            >
-              Facebook <FaFacebook size={30} />
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
+
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="/"

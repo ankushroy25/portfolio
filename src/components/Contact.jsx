@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen pt-20 bg-[#0a192f] flex justify-center items-center"
+      className="w-full h-screen pt-20 flex justify-center items-center"
     >
       <form action="" className="flex flex-col max-w-[600px] w-full">
         <div className="pb-6">
@@ -13,7 +13,7 @@ const Contact = () => {
           </p>
           <p className="text-gray-300 py-4">
             {" "}
-            Write to us your queries, feedbacks or any other matters.{" "}
+            Contact me regarding any queries, feedbacks or any other matters.{" "}
           </p>
         </div>
         <input

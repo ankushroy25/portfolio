@@ -18,6 +18,17 @@ body {
   }
 }
 
+.bg-mesh {
+  background-color: hsla(229, 64%, 11%, 1);
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(152, 81%, 24%, 0.3) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 89% 100%, hsla(289, 51%, 23%, 1) 0px, transparent 50%),
+    radial-gradient(at 29% 68%, hsla(222, 61%, 31%, 1) 0px, transparent 50%),
+    radial-gradient(at 89% 34%, hsla(193, 52%, 32%, 1) 0px, transparent 50%);
+}
 .content-div {
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,4 +45,9 @@ body {
 }
 .jumbotron {
   background-image: linear-gradient(to left, white, rgb(13, 157, 157));
+}
+
+.tech-icons {
+  font-size: 80px;
+  color: rgb(194, 237, 255);
 }

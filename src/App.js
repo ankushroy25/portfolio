@@ -2,15 +2,16 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Services from "./components/Services";
-
+import Projects from "./components/Projects";
+import Skills from "./components/Skill";
 function App() {
   return (
-    <div>
+    <div className="bg-mesh">
       <Navbar />
       <Home />
-      <Services />
       <About />
+      <Skills />
+      <Projects />
       <Contact />
     </div>
   );

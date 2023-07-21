@@ -1,41 +1,42 @@
 import React from "react";
-import { BiPhoneCall, BiLogInCircle } from "react-icons/bi";
-import cover from "../assets/cover.jpg";
-
+import { HiArrowNarrowRight } from "react-icons/hi";
+import Picture from "../assets/medbuddy.png";
+import ResumePDF from "../assets/Ankush_Roy.pdf";
 const Home = () => {
   return (
-    <div name="home" className="w-full h-screen text-sky-700">
-      <div className="flex flex-col justify-center items-center w-full">
-        <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
-          <div className="text-center pt-20 pb-8 pl-4 m-auto ml-10">
-            <p className="text-5xl mt-14 font-bold border-b-4 border-pink-600">
-              Welcome
-            </p>
+    <div
+      name="home"
+      className="w-full min-h-screen flex justify-center items-center"
+    >
+      <div className="max-w-[1000px] pt-24 mx-auto px-8 flex flex-col md:flex-row md:items-center">
+        <div className="md:w-1/2">
+          <p className="text-pink-600 text-2xl">Hi, my name is</p>
+          <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
+            Ankush Roy
+          </h1>
+          <h2 className="text-3xl sm:text-5xl mt-4 font-bold text-[#8892b0]">
+            I'm a Full Stack Developer.
+          </h2>
+          <p className="text-[#8892b0] py-4 max-w-[700px]">
+            I’m a developer who loves working with cloud and build exceptional
+            digital experiences with MERN. Currently, I’m focused on learning
+            DevOps to ensure seamless esperience in whatever I build.
+          </p>
+          <div className="flex">
+            <a
+              href={ResumePDF}
+              className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600"
+              download
+            >
+              Download Resume
+              <span className="group-hover:rotate-90 duration-300">
+                <HiArrowNarrowRight className="ml-3 " />
+              </span>
+            </a>
           </div>
-          <div></div>
         </div>
-        <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-8">
-          <div className="text-left text-4xl font-bold ">
-            <p>One stop medical hub</p>
-            <p>Find all the necessary services</p>
-            <div>
-              <button className="text-black group border-2 h-14 border-blue-900 rounded-lg px-5 py-3 my-8 flex items-center hover:bg-pink-300 hover:border-pink-600">
-                <span className="group-hover:rotate-45 duration-300">
-                  <BiPhoneCall className="mr-4" size={30} />
-                </span>
-                Call us
-              </button>
-              <button className="text-black group border-2 h-14 border-blue-900 rounded-lg px-5 py-3 my-8 flex items-center hover:bg-pink-300 hover:border-pink-600">
-                <span className="group-hover:rotate-45 duration-300">
-                  <BiLogInCircle className="mr-4" size={30} />
-                </span>
-                Sign in
-              </button>
-            </div>
-          </div>
-          <div className="pb-20 mb-32">
-            <img src={cover} className="w-full" alt="" />
-          </div>
+        <div className="md:w-1/2 mt-8 md:mt-0 md:ml-12">
+          <img src={Picture} alt="Profile Picture" className="w-full" />
         </div>
       </div>
     </div>

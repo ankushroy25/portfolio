@@ -1,32 +1,29 @@
 import React from "react";
-import { servicesData } from "../data/servicesData.js";
+import { Data } from "../data/Data.js";
 
-const Services = () => {
+const Projects = () => {
   // projects file
-  const project = servicesData;
+  const project = Data;
   //setProject(data);
 
   return (
-    <div
-      name="services"
-      className="w-full md:h-screen text-gray-300 bg-[#0a192f]"
-    >
+    <div name="projects" className="w-full md:h-screen text-gray-300 ">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="pb-2 sm:pt-14">
+        <div className="pt-24">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
-            Services
+            Projects
           </p>
-          <p className="py-6 text-xl">Check out the services we provide</p>
+          <p className="py-6 text-xl">Check out the projects I have built </p>
         </div>
 
         {/* container for services */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-2 gap-8">
           {/* Grid Item */}
           {project.map((item, index) => (
             <div
               key={index}
               style={{ backgroundImage: `url(${item.image})` }}
-              className="shadow-lg shadow-[#040c16] group container rounded-md 
+              className="shadow-lg shadow-red-500 group container rounded-lg
                             flex justify-center text-center items-center mx-auto content-div "
             >
               {/* Hover effect */}
@@ -40,7 +37,7 @@ const Services = () => {
                       className="text-center rounded-lg px-4 py-3 m-2
                                     bg-white text-gray-700 font-bold text-lg"
                     >
-                      Select
+                      View
                     </button>
                   </a>
                 </div>
@@ -53,4 +50,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Projects;
