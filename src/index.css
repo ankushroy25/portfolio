@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+@layer base {
+  body {
+    @apply font-[Raleway];
+  }
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+}
+
+.content-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+.content-div:hover {
+  background-image: linear-gradient(
+    to top,
+    rgba(124, 192, 192, 0.995),
+    hsla(194, 100%, 16%, 0.979)
+  ) !important;
+}
+.jumbotron {
+  background-image: linear-gradient(to left, white, rgb(13, 157, 157));
+}
