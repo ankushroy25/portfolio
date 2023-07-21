@@ -31,7 +31,7 @@ function Skill() {
           justifyContent="center"
           alignItems="center"
           spacing={8}
-          className="mx-auto px-24"
+          className="mx-auto md:px-24"
         >
           <Grid item xs={4} md={2} className="tech-icons">
             <DiJavascript1 />
