@@ -13,7 +13,7 @@ export const Data = [
   },
   {
     id: 2,
-    name: "Restaurant UI",
+    name: "Belly Burst- Restaurant UI",
     image: bellyburst,
     link: "https://ankushroy25.github.io/Belly-burst/",
     code: "https://github.com/ankushroy25/Belly-burst",

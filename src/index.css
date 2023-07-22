@@ -39,8 +39,8 @@
 .content-div:hover {
   background-image: linear-gradient(
     to top,
-    rgba(124, 192, 192, 0.995),
-    hsla(194, 100%, 85%, 0.979)
+    rgba(42, 190, 190, 0.694),
+    hsla(155, 78%, 16%, 0.811)
   ) !important;
 }
 .jumbotron {

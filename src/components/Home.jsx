@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import Picture from "../assets/profilepic.jpg";
 import ResumePDF from "../assets/Ankush_Roy.pdf";
@@ -42,9 +44,9 @@ const Home = () => {
             {displayText}
           </motion.h2>
           <p className="text-[#8892b0] py-4 max-w-[700px]">
-            I’m a developer who loves working with cloud and build exceptional
-            digital experiences with MERN. Currently, I’m focused on learning
-            DevOps to ensure seamless esperience in whatever I build.
+            I’m a web developer who loves working with Cloud and build
+            exceptional digital experiences with MERN applications. Trying
+            everyday to get better than my yesterday's self.
           </p>
           <div className="flex">
             <a
@@ -59,12 +61,69 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="flex justify-center md:w-1/2 my-8 md:mt-0 md:ml-12 ">
+        <motion.div
+          className="flex justify-center md:w-1/2 mt-8 md:mt-0 md:ml-12 "
+          initial={{ rotate: 180, scale: 1.5 }}
+          animate={{ rotate: 0, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 200,
+            damping: 30,
+          }}
+        >
           <img
             src={Picture}
             alt="Profile"
             className="h-80 md:h-full rounded-full shadow-cyan-300 shadow-2xl"
           />
+        </motion.div>
+
+        {/* social links for mobile screens */}
+        <div className="md:hidden mt-20">
+          <ul className="flex justify-center">
+            <li className="w-[50px] h-[50px] flex justify-between items-center  bg-blue-600">
+              <a
+                className="flex justify-between items-center w-full text-gray-300"
+                href="https://www.linkedin.com/in/ankush-roy-b141b2224/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin size={30} />
+              </a>
+            </li>
+            <li className="w-[50px] h-[50px] flex justify-between items-center  bg-black">
+              <a
+                className="flex justify-between items-center w-full text-gray-300"
+                href="https://github.com/ankushroy25"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub size={30} />
+              </a>
+            </li>
+
+            <li className="w-[50px] h-[50px] flex justify-between items-center  bg-red-600">
+              <a
+                className="flex justify-between items-center w-full text-gray-300"
+                href="mailto:`imankushroy@gmail.com`"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <HiOutlineMail size={30} />
+              </a>
+            </li>
+
+            <li className="w-[50px] h-[50px] flex justify-between items-center  bg-blue-500">
+              <a
+                className="flex justify-between items-center w-full text-gray-300"
+                href="https://twitter.com/_ankush___"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaTwitter size={30} />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
