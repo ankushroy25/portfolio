@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import Picture from "../assets/profilepic.jpg";
-import ResumePDF from "../assets/Ankush_Roy.pdf";
+
 const Home = () => {
   const textToType = "Hello, I'm a Full Stack Developer.";
   const [displayText, setDisplayText] = useState("");
@@ -18,7 +18,7 @@ const Home = () => {
       if (currentIndex > textToType.length) {
         clearInterval(typingInterval);
       }
-    }, 100); // Adjust the typing speed here
+    }, 100); //  typing speed
 
     return () => clearInterval(typingInterval);
   }, []);
@@ -37,7 +37,7 @@ const Home = () => {
           <motion.h2
             animate={{
               opacity: [0, 1],
-              transition: { duration: 0.7, delay: 0.3 },
+              transition: { duration: 0.8, delay: 0.3 },
             }}
             className="text-3xl sm:text-5xl mt-4 font-bold text-[#8892b0]"
           >
@@ -50,11 +50,13 @@ const Home = () => {
           </p>
           <div className="flex">
             <a
-              href={ResumePDF}
+              href="https://drive.google.com/file/d/1FZz4mjXqjNqwnVTqrfTvmfQVZaYiaH1t/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
               className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600"
               download
             >
-              Download Resume
+              Resume
               <span className="group-hover:rotate-90 duration-300">
                 <HiArrowNarrowRight className="ml-3 " />
               </span>

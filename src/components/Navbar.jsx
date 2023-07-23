@@ -41,7 +41,9 @@ const Navbar = () => {
       }`}
     >
       <div className="flex">
-        <img src={Logo} alt="Logo" style={{ height: "120px" }} />
+        <Link to="home" smooth={true} duration={500}>
+          <img src={Logo} alt="Logo" style={{ height: "120px" }} />
+        </Link>
       </div>
 
       <ul className="hidden md:flex text-xl">
