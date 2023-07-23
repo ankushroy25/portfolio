@@ -21,40 +21,45 @@ const Projects = () => {
         <div className="grid grid-cols-2 gap-8">
           {/* Grid Item */}
           {project.map((item, index) => (
-            <motion.div
-              key={index}
-              style={{ backgroundImage: `url(${item.image})` }}
-              className="shadow-md shadow-cyan-200 group container rounded-lg
+            <div className=" text-center rounded-lg shadow-md shadow-cyan-200">
+              <motion.div
+                key={index}
+                style={{ backgroundImage: `url(${item.image})` }}
+                className=" group container rounded-md
                             flex justify-center text-center items-center mx-auto content-div"
-              whileHover={{ scale: 1.075 }}
-            >
-              {/* Hover effect */}
-              <div className="opacity-0 group-hover:opacity-100">
-                <span className="text-2xl font font-bold text-white tracking-wider ">
-                  {item.name}
-                </span>
-                <div className="pt-4 text-center ">
-                  <a href={item.link} rel="noreferrer" target="_blank">
-                    <motion.button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                                    bg-white text-gray-700 font-bold text-lg"
-                      whileTap={{ scale: 0.9 }}
-                    >
-                      View
-                    </motion.button>
-                  </a>
-                  <a href={item.code} rel="noreferrer" target="_blank">
-                    <motion.button
-                      className="text-center rounded-lg px-4 py-3 m-2
-                                    bg-white text-gray-700 font-bold text-lg"
-                      whileTap={{ scale: 0.9 }}
-                    >
-                      Code
-                    </motion.button>
-                  </a>
+                whileHover={{ scale: 1.075 }}
+              >
+                {/* Hover effect */}
+                <div className="opacity-0 group-hover:opacity-100">
+                  <span className="text-xl font font-bold text-white tracking-wider ">
+                    {item.description}
+                  </span>
+                  <div className="pt-4 text-center ">
+                    <a href={item.link} rel="noreferrer" target="_blank">
+                      <motion.button
+                        className="text-center rounded-lg px-4 py-3 m-2
+                                    bg-white text-gray-700 font-bold text-md"
+                        whileTap={{ scale: 0.9 }}
+                      >
+                        View
+                      </motion.button>
+                    </a>
+                    <a href={item.code} rel="noreferrer" target="_blank">
+                      <motion.button
+                        className="text-center rounded-lg px-4 py-3 m-2
+                                    bg-white text-gray-700 font-bold text-md"
+                        whileTap={{ scale: 0.9 }}
+                      >
+                        Code
+                      </motion.button>
+                    </a>
+                  </div>
                 </div>
+              </motion.div>
+              <div className="p-2 bg-slate-800 text-gray-200 text-2xl font-semibold rounded-lg">
+                {item.title}
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
