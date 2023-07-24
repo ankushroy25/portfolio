@@ -18,7 +18,7 @@ const Projects = () => {
         </div>
 
         {/* container for services */}
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-2 gap-8 px-4">
           {/* Grid Item */}
           {project.map((item, index) => (
             <div
@@ -34,13 +34,13 @@ const Projects = () => {
               >
                 {/* Hover effect */}
                 <div className="opacity-0 group-hover:opacity-100">
-                  <span className="text-sm sm:text-xl font font-bold text-white tracking-wider ">
+                  <span className="text-xl font-semibold sm:font-bold text-white tracking-wider ">
                     {item.description}
                   </span>
                   <div className="pt-4 text-center ">
                     <a href={item.link} rel="noreferrer" target="_blank">
                       <motion.button
-                        className="text-center rounded-lg px-4 py-3 m-2
+                        className="text-center rounded-lg px-4 py-2 m-2
                                     bg-white text-gray-700 font-bold text-md"
                         whileTap={{ scale: 0.9 }}
                       >
@@ -49,7 +49,7 @@ const Projects = () => {
                     </a>
                     <a href={item.code} rel="noreferrer" target="_blank">
                       <motion.button
-                        className="text-center rounded-lg px-4 py-3 m-2
+                        className="text-center rounded-lg px-4 py-2 m-2
                                     bg-white text-gray-700 font-bold text-md"
                         whileTap={{ scale: 0.9 }}
                       >
