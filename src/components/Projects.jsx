@@ -21,7 +21,10 @@ const Projects = () => {
         <div className="grid grid-cols-2 gap-8">
           {/* Grid Item */}
           {project.map((item, index) => (
-            <div className=" text-center rounded-lg shadow-md shadow-cyan-200">
+            <div
+              key={index}
+              className=" text-center rounded-lg shadow-md shadow-cyan-200"
+            >
               <motion.div
                 key={index}
                 style={{ backgroundImage: `url(${item.image})` }}
@@ -31,7 +34,7 @@ const Projects = () => {
               >
                 {/* Hover effect */}
                 <div className="opacity-0 group-hover:opacity-100">
-                  <span className="text-xl font font-bold text-white tracking-wider ">
+                  <span className="text-sm sm:text-xl font font-bold text-white tracking-wider ">
                     {item.description}
                   </span>
                   <div className="pt-4 text-center ">
