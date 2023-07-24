@@ -23,7 +23,7 @@ const Projects = () => {
           {project.map((item, index) => (
             <div
               key={index}
-              className=" text-center rounded-lg shadow-md shadow-cyan-200"
+              className=" text-center rounded-lg shadow-md shadow-cyan-200 m-2"
             >
               <motion.div
                 key={index}

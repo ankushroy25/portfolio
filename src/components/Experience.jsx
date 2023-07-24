@@ -14,9 +14,9 @@ const Experience = () => {
           <Box py={8} className="mx-12 md:mx-auto">
             <Grid container justifyContent="center" spacing={8}>
               <Grid item xs={12} md={6}>
-                <div className="p-12 h-full w-full bg-rose-400 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 exp-card">
+                <div className="p-10 h-full w-full bg-rose-400 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 exp-card">
                   <Box display="flex" alignItems="center">
-                    <FaBriefcase size={25} className="mr-2" />
+                    <FaBriefcase size={25} className="hidden sm:visible mr-2" />
                     <Typography variant="h4" color="ButtonShadow">
                       Contributor
                     </Typography>
@@ -35,7 +35,7 @@ const Experience = () => {
               <Grid item xs={12} md={6}>
                 <div className="p-12 h-full w-full bg-rose-400 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 exp-card">
                   <Box display="flex" alignItems="center">
-                    <FaBriefcase size={25} className="mr-2" />
+                    <FaBriefcase size={25} className="hidden sm:visible mr-2" />
                     <Typography variant="h4" color="ButtonShadow">
                       Contributor
                     </Typography>

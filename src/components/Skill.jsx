@@ -16,7 +16,7 @@ import {
   SiGooglecloud,
   SiExpress,
 } from "react-icons/si";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const IconsData = [
   DiJavascript1,
@@ -71,7 +71,12 @@ function Skill() {
                 variants={leftToRightAnimation}
                 transition={{ duration: 0.5 }}
               > */}
-              <IconComponent />
+              <motion.div
+                initial={{ opacity: 0.75 }}
+                whileHover={{ scale: 1.2, opacity: 1 }}
+              >
+                <IconComponent />
+              </motion.div>
               {/* </motion.div> */}
             </Grid>
           ))}

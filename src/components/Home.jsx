@@ -6,7 +6,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import Picture from "../assets/profilepic.jpg";
 
 const Home = () => {
-  const textToType = "Hello, I'm a Full Stack Developer.";
+  const textToType = "I'm a Full Stack Developer.";
   const [displayText, setDisplayText] = useState("");
 
   useEffect(() => {
@@ -69,8 +69,9 @@ const Home = () => {
           animate={{ rotate: 0, scale: 1 }}
           transition={{
             type: "spring",
-            stiffness: 200,
-            damping: 30,
+            stiffness: 300,
+            damping: 10,
+            duration: 5,
           }}
         >
           <img
