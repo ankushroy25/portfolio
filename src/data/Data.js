@@ -1,7 +1,8 @@
 import medubddy from "../assets/medbuddy.png";
 import bellyburst from "../assets/bellyburst.png";
 import todolist from "../assets/todolist.png";
-import quotegen from "../assets/quotegenerator.png";
+import briefit from "../assets/briefit.png";
+// import quotegen from "../assets/quotegenerator.png";
 
 export const Data = [
   {
@@ -31,10 +32,19 @@ export const Data = [
   },
   {
     id: 4,
-    title: "DeQuote",
-    description: "Random quote generator - HTML, CSS, JavaScript, APIs",
-    image: quotegen,
-    link: "https://codepen.io/ankushroy25/full/PoBLpLV",
-    code: "https://codepen.io/ankushroy25/pen/PoBLpLV",
+    title: "BriefIt",
+    description:
+      "Article,Blog Summarizer application - React,Tailwind,Redux,GPT API",
+    image: briefit,
+    link: "https://brief-it.netlify.app/",
+    code: "https://github.com/ankushroy25/Briefit",
   },
+  // {
+  //   id: 4,
+  //   title: "DeQuote",
+  //   description: "Random quote generator - HTML, CSS, JavaScript, APIs",
+  //   image: quotegen,
+  //   link: "https://codepen.io/ankushroy25/full/PoBLpLV",
+  //   code: "https://codepen.io/ankushroy25/pen/PoBLpLV",
+  // },
 ];
