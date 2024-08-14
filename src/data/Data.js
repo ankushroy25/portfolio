@@ -1,34 +1,34 @@
-import medubddy from "../assets/medbuddy.png";
-import bellyburst from "../assets/bellyburst.png";
-import todolist from "../assets/todolist.png";
+import preview from "../assets/preview.png";
+import Cover from "../assets/Cover.png";
 import briefit from "../assets/briefit.png";
+import gxcover from "../assets/gxcover.png";
 // import quotegen from "../assets/quotegenerator.png";
 
 export const Data = [
   {
     id: 1,
-    title: "MedBuddy",
+    title: "ScholarMates",
     description:
-      "All purpose medical app - MERN,Tailwind, Material UI, sentiment analysis and APIs",
-    image: medubddy,
-    link: "https://devfolio.co/projects/medbuddy-2f7d/update/7c96cfcb1c344199a060bd49da008c7e",
-    code: "https://github.com/ankushroy25/MedBuddy",
+      "Student interaction platform - Next,SocketIO,Node,Tailwind,AWS,ShadCN",
+    image: preview,
+    link: "https://www.scholarmates.me",
+    code: "https://github.com/meghnadutta02/scholarmates",
   },
   {
     id: 2,
-    title: "Belly Burst",
-    description: "Restaurant UI - HTML,CSS, Bootstrap, JavaScript",
-    image: bellyburst,
-    link: "https://ankushroy25.github.io/Belly-burst/",
-    code: "https://github.com/ankushroy25/Belly-burst",
+    title: "CritiQ",
+    description: "LLM assited DeFi review reward system- MERN, Blockchain, AI",
+    image: Cover,
+    link: "https://critiq-one.vercel.app/",
+    code: "https://github.com/ankushroy25/CritiQ",
   },
   {
     id: 3,
-    title: "To-do List App",
-    description: "CRUD application - React, Tailwind, Firebase",
-    image: todolist,
-    link: "https://todo-app-ec7e6.firebaseapp.com/",
-    code: "https://github.com/ankushroy25/todo-app",
+    title: "GenerosityX",
+    description: "Social upliftment platform - MERN, GCP, OAuth, Gmail",
+    image: gxcover,
+    link: "https://generosityx.app/",
+    code: "https://github.com/meghnadutta02/generosityX",
   },
   {
     id: 4,
