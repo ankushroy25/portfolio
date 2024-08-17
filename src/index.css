@@ -53,11 +53,15 @@
 }
 
 .exp-card:hover {
-  box-shadow: -12px 12px 8px 0px;
+  box-shadow: -8px 8px 8px 0px;
   transform: translate(10px, -10px);
   transition: 0.5s;
 }
 .exp-card {
-  border: 0.5px solid seashell;
-  box-shadow: -4px 4px 6px 0px;
+  border: 0.5px solid rgb(137, 140, 149);
+  box-shadow: -2px 2px 4px 0px;
+}
+
+.br {
+  border: 2px solid red;
 }

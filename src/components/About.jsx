@@ -21,7 +21,7 @@ const About = () => {
           </div>
           <div>
             <p className="text-2xl">
-              I am currently in pre-final year pursing my Bachelors in
+              I am currently a final year CSE undergrad pursing my Bachelors in
               Technology from Heritage Institue of Technology, Kolkata. I am
               enthusiastic about learning cloud and DevOps technologies to get
               better with my development skills. I am looking for opportunities
