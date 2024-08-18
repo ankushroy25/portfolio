@@ -6,7 +6,6 @@ import {
   DiNodejs,
   DiMongodb,
   DiPython,
-  DiGit,
   DiJava,
 } from "react-icons/di";
 import {
@@ -15,22 +14,36 @@ import {
   SiAmazonaws,
   SiGooglecloud,
   SiExpress,
+  SiNextdotjs,
+  SiGraphql,
+  SiTypescript,
+  SiCplusplus,
+  SiDocker,
+  SiKubernetes,
+  SiGo,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const IconsData = [
   DiJavascript1,
+  SiTypescript,
   DiJava,
+  DiPython,
+  SiCplusplus,
+  SiGo,
   SiAmazonaws,
   SiGooglecloud,
-  SiTailwindcss,
   DiNodejs,
-  DiReact,
-  DiPython,
-  DiMongodb,
-  DiGit,
-  SiFirebase,
   SiExpress,
+  DiMongodb,
+  DiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiDocker,
+  SiKubernetes,
+  SiFirebase,
+
+  SiGraphql,
 ];
 
 function Skill() {
@@ -61,7 +74,7 @@ function Skill() {
           justifyContent="center"
           alignItems="center"
           spacing={8}
-          className="p-4 mx-auto md:px-24"
+          className="p-4 mx-auto"
         >
           {IconsData.map((IconComponent, index) => (
             <Grid item xs={4} md={2} className="tech-icons" key={index}>
@@ -75,7 +88,7 @@ function Skill() {
                 initial={{ opacity: 0.75 }}
                 whileHover={{ scale: 1.2, opacity: 1 }}
               >
-                <IconComponent />
+                <IconComponent className="h-10 w-10 sm:h-16 sm:w-16" />
               </motion.div>
               {/* </motion.div> */}
             </Grid>

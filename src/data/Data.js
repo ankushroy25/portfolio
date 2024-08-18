@@ -9,7 +9,7 @@ export const Data = [
     id: 1,
     title: "ScholarMates",
     description:
-      "Student interaction platform - Next,SocketIO,Node,Tailwind,AWS,ShadCN",
+      "Student interaction platform - Next, SocketIO, Node, Tailwind, AWS, ShadCN",
     image: preview,
     link: "https://www.scholarmates.me",
     code: "https://github.com/meghnadutta02/scholarmates",
@@ -34,7 +34,7 @@ export const Data = [
     id: 4,
     title: "BriefIt",
     description:
-      "Article,Blog Summarizer application - React,Tailwind,Redux,GPT API",
+      "Article,Blog Summarizer application - React, Tailwind, Redux, GPT API",
     image: briefit,
     link: "https://brief-it.netlify.app/",
     code: "https://github.com/ankushroy25/Briefit",

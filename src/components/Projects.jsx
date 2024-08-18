@@ -1,6 +1,7 @@
 import React from "react";
 import { Data } from "../data/Data.js";
 import { motion } from "framer-motion";
+import { CodeOutlined, LinkOutlined } from "@mui/icons-material";
 
 const Projects = () => {
   // projects file
@@ -14,53 +15,47 @@ const Projects = () => {
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
             Projects
           </p>
-          <p className="py-6 text-xl">Check out the projects I have built </p>
+          <p className="py-6 text-xl">
+            Check out some of the projects I have built{" "}
+          </p>
         </div>
 
-        {/* container for services */}
         <div className="grid sm:grid-cols-2 gap-8 px-4">
-          {/* Grid Item */}
           {project.map((item, index) => (
             <div
               key={index}
-              className=" text-center rounded-lg shadow-md shadow-cyan-200 m-2"
+              className="text-center rounded-lg shadow-md shadow-cyan-200 m-2"
             >
-              <motion.div
-                key={index}
+              <div
                 style={{ backgroundImage: `url(${item.image})` }}
-                className=" group container rounded-md
-                            flex justify-center text-center items-center mx-auto content-div"
-                whileHover={{ scale: 1.075 }}
+                className="group container rounded-t-md flex justify-center text-center items-center mx-auto content-div"
               >
-                {/* Hover effect */}
                 <div className="opacity-0 group-hover:opacity-100">
-                  <span className="text-xl font-semibold sm:font-bold text-white tracking-wider ">
+                  <p className="pt-4 text-center text-xl font-semibold text-white w-fit px-4">
                     {item.description}
-                  </span>
-                  <div className="pt-4 text-center ">
-                    <a href={item.link} rel="noreferrer" target="_blank">
-                      <motion.button
-                        className="text-center rounded-lg px-4 py-2 m-2
-                                    bg-white text-gray-700 font-bold text-md"
-                        whileTap={{ scale: 0.9 }}
-                      >
-                        View
-                      </motion.button>
-                    </a>
-                    <a href={item.code} rel="noreferrer" target="_blank">
-                      <motion.button
-                        className="text-center rounded-lg px-4 py-2 m-2
-                                    bg-white text-gray-700 font-bold text-md"
-                        whileTap={{ scale: 0.9 }}
-                      >
-                        Code
-                      </motion.button>
-                    </a>
-                  </div>
+                  </p>
                 </div>
-              </motion.div>
-              <div className="p-2 bg-slate-800 text-gray-200 text-2xl font-semibold rounded-lg">
-                {item.title}
+              </div>
+              <div className="flex justify-between px-8 py-3 bg-slate-800 text-gray-200 text-lg md:text-xl font-semibold rounded-lg items-center">
+                <p> {item.title}</p>
+                <div className="flex">
+                  <a href={item.link} rel="noreferrer" target="_blank">
+                    <motion.button
+                      className="text-center rounded-full p-1 mr-3 hover:bg-cyan-700 text-gray-200 font-bold text-sm"
+                      whileTap={{ scale: 0.9 }}
+                    >
+                      <LinkOutlined />
+                    </motion.button>
+                  </a>
+                  <a href={item.code} rel="noreferrer" target="_blank">
+                    <motion.button
+                      className="text-center rounded-full p-1 hover:bg-cyan-700 text-gray-200 font-bold text-sm"
+                      whileTap={{ scale: 0.9 }}
+                    >
+                      <CodeOutlined />
+                    </motion.button>
+                  </a>
+                </div>
               </div>
             </div>
           ))}

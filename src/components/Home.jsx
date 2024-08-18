@@ -44,9 +44,10 @@ const Home = () => {
             {displayText}
           </motion.h2>
           <p className="text-[#8892b0] py-4 max-w-[700px]">
-            I’m a web developer who loves working with Cloud and build
-            exceptional digital experiences with MERN applications. Trying
-            everyday to get better than my yesterday's self.
+            I&apos;m a developer who loves working with various tech,
+            enthusiastic about Cloud and DevOps and builds exceptional digital
+            experiences with web applications. Trying everyday to get better
+            than my yesterday's self.
           </p>
           <div className="flex">
             <a
@@ -64,7 +65,7 @@ const Home = () => {
           </div>
         </div>
         <motion.div
-          className="flex justify-center md:w-1/2 mt-8 md:mt-0 md:ml-12 "
+          className="flex justify-center md:w-1/2 mt-8 md:mt-0 md:ml-12"
           initial={{ rotate: 180, scale: 1.5 }}
           animate={{ rotate: 0, scale: 1 }}
           transition={{
@@ -77,7 +78,7 @@ const Home = () => {
           <img
             src={Picture}
             alt="Profile"
-            className="h-80 md:h-full rounded-full shadow-cyan-300 shadow-2xl"
+            className="h-[16rem] w-[16rem] md:h-96 md:w-96 rounded-full shadow-cyan-300 shadow-2xl"
           />
         </motion.div>
 
