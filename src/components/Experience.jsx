@@ -31,7 +31,8 @@ const Experience = () => {
               <Grid item xs={12}>
                 <div className="p-4 h-full w-full bg-rose-400 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 exp-card">
                   <Typography variant="body1" fontWeight="bold">
-                    Finalist at Smart India Hackathon 2023.
+                    Finalist at Smart India Hackathon 2023, Winner at Nitrothon
+                    by Router Protocol.
                   </Typography>
                 </div>
               </Grid>
